@@ -2,6 +2,7 @@ defmodule DemoPhoenixApi.Account.User do
   use Ecto.Schema
   import Ecto.Changeset
 
+  @derive {Phoenix.Param, key: :phone_no}
   @primary_key false
   schema "users" do
     field :phone_no, :string, primary_key: true

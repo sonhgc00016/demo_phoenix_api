@@ -16,7 +16,13 @@ defmodule DemoPhoenixApiWeb.Router do
   scope "/api", DemoPhoenixApiWeb do
     pipe_through :api
 
-    resources "/users", UserController, except: [:new, :edit, :delete]
+    resources "/users", UserController, except: [:new, :edit, :delete, :show, :update]
+    scope "/users" do
+      scope "/:phone_no" do
+        get   "/", UserController, :show
+        put   "/", UserController, :update
+      end
+    end
   end
 
   # Enables LiveDashboard only for development

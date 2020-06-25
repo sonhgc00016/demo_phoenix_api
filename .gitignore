@@ -50,6 +50,7 @@ demo_phoenix_api-*.tar
 tags
 .tags*
 /docker/data
+/data
 # /rel
 /doc
 rel.tar.gz

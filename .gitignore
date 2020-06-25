@@ -1,0 +1,74 @@
+# The directory Mix will write compiled artifacts to.
+/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
+
+# The directory Mix downloads your dependencies sources to.
+/deps/
+
+# Where 3rd-party dependencies like ExDoc output generated docs.
+/doc/
+
+# Ignore .fetch files in case you like to edit your project deps locally.
+/.fetch
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
+
+# Ignore package tarball (built via "mix hex.build").
+demo_phoenix_api-*.tar
+
+# Since we are building assets from assets/,
+# we ignore priv/static. You may want to comment
+# this depending on your deployment strategy.
+/priv/static/
+
+# variables.
+/config/prod.secret.exs
+/config/dev.secret.exs
+
+# Additional
+.DS_Store
+._.DS_Store
+/node_modules
+/priv/static/css
+/priv/static/font
+/priv/static/images
+/priv/static/js
+/priv/static/*.eot
+/priv/static/*.svg
+/priv/static/*.ttf
+/priv/static
+/priv/key
+/priv/google/*
+/web/static
+.tags
+tags
+.tags*
+/docker/data
+# /rel
+/doc
+rel.tar.gz
+dump.rdb
+npm-debug.log
+.hex
+.mix
+\#*\#
+.\#*
+pancake-v2.sublime-project
+pancake-v2.sublime-workspace
+._.unison..*
+.unison.*
+.docker-sync/
+Session.vim
+.vscode/
+.elixir_ls/
+log/
+.tool-versions
+*.swp
+.deliver/releases/
+playbooks/templates/ssl/
